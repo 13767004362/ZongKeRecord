@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhongke.hapilorecord.activity.MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/left_light" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_light"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/left_sound"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_sound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/uncheck_shut_down"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_record_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:src="@mipmap/record_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
+        android:text="开始录音..."
+        android:textColor="#fff"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_record_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_record_bg" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#fff"
+        android:textSize="68sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_record_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_record_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_record_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_record_bg" />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="124dp"
+        android:src="@mipmap/rudder_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="105dp"
+        android:layout_marginTop="124dp"
+        android:src="@mipmap/rudder_bg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_rudder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rudder"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_left"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_left"
+        app:layout_constraintRight_toRightOf="@+id/iv_left"
+        app:layout_constraintTop_toTopOf="@+id/iv_left" />
+
+    <ImageView
+        android:id="@+id/right_rudder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rudder"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_right"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_right"
+        app:layout_constraintRight_toRightOf="@+id/iv_right"
+        app:layout_constraintTop_toTopOf="@+id/iv_right" />
+
+    <ImageView
+        android:id="@+id/iv_save_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="133dp"
+        android:src="@mipmap/bg_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_pause_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:src="@mipmap/bg_button"
+        app:layout_constraintLeft_toRightOf="@+id/iv_save_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_bg" />
+
+    <ImageView
+        android:id="@+id/iv_start_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/bg_button"
+        app:layout_constraintLeft_toRightOf="@+id/iv_pause_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_bg" />
+
+    <ImageView
+        android:id="@+id/iv_cancel_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/bg_button"
+        app:layout_constraintLeft_toRightOf="@+id/iv_start_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_bg" />
+
+    <ImageView
+        android:id="@+id/iv_file_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/bg_button"
+        app:layout_constraintLeft_toRightOf="@+id/iv_cancel_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_bg" />
+
+
+    <ImageView
+        android:id="@+id/iv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uncheck_save"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_save_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_save_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_save_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_save_bg" />
+
+    <ImageView
+        android:id="@+id/iv_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uncheck_pause"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_pause_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_pause_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_pause_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_pause_bg" />
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uncheck_start"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_start_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_start_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_start_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_start_bg" />
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uncheck_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cancel_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_cancel_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_cancel_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_cancel_bg" />
+
+    <ImageView
+        android:id="@+id/iv_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uncheck_file"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_file_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_file_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_file_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_file_bg" />
+
+    <ImageView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/text_bg"
+        android:src="@drawable/uncheck_text_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_save_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_save_bg" />
+
+    <ImageView
+        android:id="@+id/tv_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/text_bg2"
+        android:src="@drawable/uncheck_text_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_file_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_file_bg" />
+
+    <ImageView
+        android:id="@+id/tv_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/text_bg"
+        android:src="@drawable/uncheck_text_pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_pause_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_pause_bg" />
+
+    <ImageView
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/text_bg"
+        android:src="@drawable/uncheck_text_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_start_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_start_bg" />
+
+    <ImageView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:background="@mipmap/text_bg"
+        android:src="@drawable/uncheck_text_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_cancel_bg"
+        app:layout_constraintRight_toRightOf="@+id/iv_cancel_bg" />
+
+    <ImageView
+        android:id="@+id/left_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="134dp"
+        android:src="@mipmap/left_light_four"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/left_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/left_light_three"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/left_four"
+        app:layout_constraintLeft_toLeftOf="@+id/left_four" />
+
+    <ImageView
+        android:id="@+id/left_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/left_light_two"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/left_three"
+        app:layout_constraintLeft_toLeftOf="@+id/left_three" />
+
+    <ImageView
+        android:id="@+id/left_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/left_light_one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/left_two"
+        app:layout_constraintLeft_toLeftOf="@+id/left_two" />
+
+    <ImageView
+        android:id="@+id/right_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="134dp"
+        android:src="@mipmap/right_light_four"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/right_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_light_three"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/right_four"
+        app:layout_constraintRight_toRightOf="@+id/right_four" />
+
+    <ImageView
+        android:id="@+id/right_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_light_two"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/right_three"
+        app:layout_constraintRight_toRightOf="@+id/right_three" />
+
+    <ImageView
+        android:id="@+id/right_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_light_one"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/right_two"
+        app:layout_constraintRight_toRightOf="@+id/right_two" />
+</android.support.constraint.ConstraintLayout>
